@@ -10,7 +10,9 @@ const PARAMETERS = {
 	frames: 'Number of frames per day',
 	extraFrames: 'Number of extra frames for the last image',
 	horizontalAxisLabel: 'Horizontal axis label',
-	verticalAxisLabel: 'Vertical axis label'
+	verticalAxisLabel: 'Vertical axis label',
+	milestoneSource: 'Milestone source',
+	filter: 'Filter codes separated by comma (eg: US,CL)'
 };
 const argv = optimist.argv;
 

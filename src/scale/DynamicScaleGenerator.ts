@@ -22,12 +22,12 @@ export default class DynamicScaleGenerator
 		// const max = lastPoints.max();
 		return {
 			horizontal: {
-				min: 0.9, // min - MARGIN,
-				max: 2.8, // max + MARGIN
+				min: 1, // min - MARGIN,
+				max: 3.7, // max + MARGIN
 			},
 			vertical: {
-				min: 0.8, // min - MARGIN,
-				max: 2.1, // 2.8 // max + MARGIN
+				min: 0.4, // min - MARGIN,
+				max: 3, // 2.8 // max + MARGIN
 			}
 		};
 	}

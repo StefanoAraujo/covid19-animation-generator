@@ -22,11 +22,11 @@ export default class DynamicScaleGenerator
 		return {
 			horizontal: {
 				min: 1, // min - MARGIN,
-				max: 3.5, // max + MARGIN
+				max: 3, // max + MARGIN
 			},
 			vertical: {
 				min: 1, // max - MARGIN,
-				max: 3 // max + MARGIN
+				max: 2.5 // max + MARGIN
 			}
 		};
 	}

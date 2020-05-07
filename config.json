@@ -341,130 +341,49 @@
 					"color": "#a05195"
 				},
 				{
-					"name": "La Florida",
-					"code": "La Florida",
-					"color": "#00B0FF"
-				},
-				{
-					"name": "Quilicura",
-					"code": "Quilicura",
-					"color": "#ff7c43"
-				},
-				{
-					"name": "Estación Central",
-					"code": "Estación Central",
-					"color": "#9BFF84"
-				},
-				{
-					"name": "Peñalolén",
-					"code": "Peñalolén",
-					"color": "#E28888"
-				},
-				{
-					"name": "La Pintana",
-					"code": "La Pintana",
-					"color": "#0076AC"
-				},
-				{
-					"name": "Conchalí",
-					"code": "Conchalí",
-					"color": "white"
-				},
-				{
 					"name": "Pudahuel",
 					"code": "Pudahuel",
 					"color": "#665191"
 				},
 				{
-					"name": "San Joaquín",
-					"code": "San Joaquín",
-					"color": "#d45087"
-				},
-				{
-					"name": "Recoleta",
-					"code": "Recoleta",
-					"color": "#ffa600"
-				},
-				{
-					"name": "Renca",
-					"code": "Renca",
-					"color": "white"
-				},
-				{
-					"name": "San Miguel",
-					"code": "San Miguel",
-					"color": "white"
-				},
-				{
-					"name": "Cerrillos",
-					"code": "Cerrillos",
-					"color": "white"
-				},
-				{
-					"name": "Pedro Aguirre Cerda",
-					"code": "Pedro Aguirre Cerda",
-					"color": "white"
-				},
-				{
-					"name": "Cerro Navia",
-					"code": "Cerro Navia",
-					"color": "white"
-				},
-				{
-					"name": "San Ramón",
-					"code": "San Ramón",
-					"color": "white"
-				},
-				{
-					"name": "Lo Prado",
-					"code": "Lo Prado",
-					"color": "white"
-				},
-				{
-					"name": "La Granja",
-					"code": "La Granja",
-					"color": "white"
-				},
-				{
-					"name": "Macul",
-					"code": "Macul",
-					"color": "white"
-				},
-				{
-					"name": "Lo Espejo",
-					"code": "Lo Espejo",
-					"color": "white"
-				},
-				{
 					"name": "Colina",
 					"code": "Colina",
-					"color": "white"
+					"color": "#00B0FF"
 				},
 				{
 					"name": "Huechuraba",
 					"code": "Huechuraba",
-					"color": "white"
-				},
-				{
-					"name": "La Cisterna",
-					"code": "La Cisterna",
-					"color": "white"
+					"color": "#ff7c43"
 				},
 				{
 					"name": "La Reina",
 					"code": "La Reina",
-					"color": "white"
+					"color": "#9BFF84"
 				},
 				{
 					"name": "Lampa",
 					"code": "Lampa",
-					"color": "white"
-				}
-				,
+					"color": "#E28888"
+				},
 				{
-					"name": "Melipilla",
-					"code": "Melipilla",
-					"color": "white"
+					"name": "Padre Hurtado",
+					"code": "Padre Hurtado",
+					"color": "#69FFC0"
+				},
+				{
+					"name": "Peñaflor",
+					"code": "Peñaflor",
+					"color": "#90FF69"
+				},
+				{
+					"name": "Pirque",
+					"code": "Pirque",
+					"color": "#C6FF69"
+				},
+				{
+					"name": "San José de Maipo",
+					"code": "San José de Maipo",
+					"color": "#FFCC69"
 				}
 			]
 		}

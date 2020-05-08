@@ -434,6 +434,18 @@
 					"color": "#d45087"
 				}
 			]
+		},
+		"chile-uci": {
+			"url": "http://localhost:8080/uci.csv",
+			"nameColumn": "region",
+			"series":
+			[
+				{
+					"name": "Chile",
+					"code": "Chile",
+					"color": "#FFA000"
+				}
+			]
 		}
 	},
 	"defaults":

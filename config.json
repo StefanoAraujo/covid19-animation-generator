@@ -450,59 +450,14 @@
 			]
 		},
 		"chile-comunas": {
-			"url": "https://raw.githubusercontent.com/jorgeperezrojas/covid19-data/master/csv/confirmados_comunas_interpolado.csv",
+			"url": "http://localhost:8080/comunas.csv",
 			"nameColumn": "comuna",
 			"series":
 			[
 				{
-					"name": "Santiago",
-					"code": "Santiago",
-					"color": "#ffa600"
-				},
-				{
-					"name": "Punta Arenas",
-					"code": "Punta Arenas",
-					"color": "#a05195"
-				},
-				{
-					"name": "Puente Alto",
-					"code": "Puente Alto",
-					"color": "#00B0FF"
-				},
-				{
-					"name": "Maipú",
-					"code": "Maipú",
-					"color": "#ff7c43"
-				},
-				{
-					"name": "Vitacura",
-					"code": "Vitacura",
-					"color": "white"
-				},
-				{
-					"name": "Temuco",
-					"code": "Temuco",
-					"color": "#FF9D00"
-				},
-				{
-					"name": "Las Condes",
-					"code": "Las Condes",
-					"color": "#FF00B3"
-				},
-				{
-					"name": "Independencia",
-					"code": "Independencia",
-					"color": "#FF00B3"
-				},
-				{
-					"name": "Quilicura",
-					"code": "Quilicura",
-					"color": "#FF00B3"
-				},
-				{
-					"name": "Providencia",
-					"code": "Providencia",
-					"color": "#FF00B3"
+					"name": "todas",
+					"code": "SCL",
+					"color": "#FF5252"
 				}
 			]
 		}

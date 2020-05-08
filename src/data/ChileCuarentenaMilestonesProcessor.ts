@@ -78,6 +78,17 @@ const MILESTONES: { [key: string]: Milestone[] } = {
 		{ date: DateTime.fromISO('2020-03-28'), color: RED },
 		{ date: DateTime.fromISO('2020-04-17'), color: GREEN },
 	],
+	'todas': [
+		{ date: DateTime.fromISO('2020-01-01'), color: '#70FF00' },
+		{ date: DateTime.fromISO('2020-03-26'), color: 'rgb(255, 134, 134)' },
+		{ date: DateTime.fromISO('2020-04-03'), color: 'rgb(255, 162, 162)' },
+		{ date: DateTime.fromISO('2020-04-09'), color: 'rgb(255, 81, 81)' },
+		{ date: DateTime.fromISO('2020-04-14'), color: 'rgb(255, 255, 255)' },
+		{ date: DateTime.fromISO('2020-04-16'), color: 'rgb(255, 167, 167)' },
+		{ date: DateTime.fromISO('2020-04-17'), color: 'rgb(255, 237, 237)' },
+		{ date: DateTime.fromISO('2020-04-23'), color: 'rgb(255, 168, 168)' },
+		{ date: DateTime.fromISO('2020-04-30'), color: 'rgb(255, 77, 77)' },
+	]
 };
 const NONE = [{ date: DateTime.fromISO('2020-01-01'), color: GREEN }];
 

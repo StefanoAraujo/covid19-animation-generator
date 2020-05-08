@@ -174,10 +174,15 @@ export default class ImageGenerator
 		const reverse = !horizontal;
 		const rotate = horizontal ? 0 : -90;
 		const areaSegment = areaWidth / (scale.max - scale.min);
-		const min = Math.ceil(scale.min);
-		for (let labelValue = min; labelValue <= scale.max; labelValue++)
+		const jump = horizontal ? 5 : 0.25;
+		const min = jump * Math.ceil(scale.min / jump);
+
+		for (let labelValue = min; labelValue <= scale.max; labelValue += jump)
 		{
-			const labelText = ScaleLabelGenerator.generate(Math.pow(10, labelValue));
+			const labelText = horizontal ?
+				DateTime.fromISO('2020-01-01').plus ({ days: labelValue }).toFormat('LL/dd') :
+				// ScaleLabelGenerator.generate(Math.pow(10, labelValue));
+				ScaleLabelGenerator.generate(Math.floor(Math.pow(10, labelValue)));
 			const offset = areaSegment * (labelValue - scale.min);
 			const pos = reverse ?
 				start - offset :

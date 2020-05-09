@@ -2,28 +2,32 @@
 import { TimeSeries, Milestone } from '../util/Types';
 import { DateTime } from 'luxon';
 
-const GREEN = '#62FF00';
-const RED = '#FF000B';
-const YELLOW = '#FFDD00';
+const GREEN = '#6DFF18';
+const RED = '#FF3818';
+const YELLOW = '#FFDA18';
 
 const MILESTONES: { [key: string]: Milestone[] } = {
 	'Santiago': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
 		{ date: DateTime.fromISO('2020-03-26'), color: RED },
 		{ date: DateTime.fromISO('2020-04-14'), color: YELLOW },
+		{ date: DateTime.fromISO('2020-05-05'), color: RED },
 	],
 	'Punta Arenas': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
 		{ date: DateTime.fromISO('2020-04-01'), color: RED },
+		{ date: DateTime.fromISO('2020-05-08'), color: GREEN },
 	],
 	'Puente Alto': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
 		{ date: DateTime.fromISO('2020-04-09'), color: YELLOW },
+		{ date: DateTime.fromISO('2020-05-08'), color: RED },
 	],
 	'Vitacura': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
 		{ date: DateTime.fromISO('2020-03-26'), color: RED },
 		{ date: DateTime.fromISO('2020-04-14'), color: GREEN },
+		{ date: DateTime.fromISO('2020-05-05'), color: RED },
 	],
 	'Temuco': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
@@ -44,9 +48,11 @@ const MILESTONES: { [key: string]: Milestone[] } = {
 	],
 	'Quilicura': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
+		{ date: DateTime.fromISO('2020-05-05'), color: RED },
 	],
 	'Recoleta': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
+		{ date: DateTime.fromISO('2020-05-05'), color: RED },
 	],
 	'Providencia': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
@@ -62,6 +68,7 @@ const MILESTONES: { [key: string]: Milestone[] } = {
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
 		{ date: DateTime.fromISO('2020-03-26'), color: RED },
 		{ date: DateTime.fromISO('2020-04-14'), color: YELLOW },
+		{ date: DateTime.fromISO('2020-05-08'), color: GREEN },
 	],
 	'Chillán': [
 		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },

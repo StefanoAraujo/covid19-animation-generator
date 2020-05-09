@@ -2,9 +2,9 @@
 import { TimeSeries, Milestone } from '../util/Types';
 import { DateTime } from 'luxon';
 
-const GREEN = '#AEFF92';
-const RED = '#FF9292';
-const YELLOW = '#FFD67A';
+const GREEN = '#62FF00';
+const RED = '#FF000B';
+const YELLOW = '#FFDD00';
 
 const MILESTONES: { [key: string]: Milestone[] } = {
 	'Santiago': [

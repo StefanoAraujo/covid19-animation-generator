@@ -85,6 +85,11 @@ const MILESTONES: { [key: string]: Milestone[] } = {
 		{ date: DateTime.fromISO('2020-03-28'), color: RED },
 		{ date: DateTime.fromISO('2020-04-17'), color: GREEN },
 	],
+	'Concepción': [
+		{ date: DateTime.fromISO('2020-01-01'), color: GREEN },
+		{ date: DateTime.fromISO('2020-04-06'), color: YELLOW },
+		{ date: DateTime.fromISO('2020-04-16'), color: GREEN },
+	],
 	'todas': [
 		{ date: DateTime.fromISO('2020-01-01'), color: '#70FF00' },
 		{ date: DateTime.fromISO('2020-03-26'), color: 'rgb(255, 134, 134)' },

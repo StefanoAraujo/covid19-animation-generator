@@ -83,6 +83,8 @@ export default class ImageGenerator
 			// Draw other items
 			this.drawScale(writer, frame);
 			this.drawDate(writer, frame.date);
+			this.drawSeriesMarkers(series, writer);
+
 			await this.drawWatermark(writer);
 		}
 
@@ -104,6 +106,29 @@ export default class ImageGenerator
 
 		const point = series.points[series.points.length - 1];
 		writer.drawCircle(this.layout.circleSize, series.color, point, this.layout.plotArea);
+	}
+
+	private drawSeriesMarkers(series: PlotSeries, writer: CanvasWriter)
+	{
+		const MARKER_LENGTH = 12;
+		const MARKER_WIDTH = 5;
+
+		if (!series.points.length)
+			return;
+
+		const point = series.points[series.points.length - 1];
+		const leftPoint = { x: this.layout.plotArea.left, y: point.y };
+		const bottomPoint = { x: point.x, y: this.layout.plotArea.bottom };
+		writer.drawLine(
+			series.color,
+			MARKER_WIDTH,
+			{ x: leftPoint.x - MARKER_LENGTH, y: leftPoint.y },
+			{ x: leftPoint.x + MARKER_LENGTH, y: leftPoint.y });
+		writer.drawLine(
+			series.color,
+			MARKER_WIDTH,
+			{ x: bottomPoint.x, y: bottomPoint.y - MARKER_LENGTH },
+			{ x: bottomPoint.x, y: bottomPoint.y + MARKER_LENGTH });
 	}
 
 	private drawSeriesLabel(series: PlotSeries, writer: CanvasWriter)

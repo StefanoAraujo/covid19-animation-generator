@@ -457,6 +457,6 @@
 		"frames": 30,
 		"extraFrames": 300,
 		"horizontalAxisLabel": "date",
-		"verticalAxisLabel": "current ICU patients (log)"
+		"verticalAxisLabel": "ICU patients w/COVID-19 (log)"
 	}
 }

@@ -1,8 +1,10 @@
 
 import * as Enumerable from 'linq';
 import { Scale, PlotSeries } from '../util/Types';
+import { DateTime } from 'luxon';
 
 const MARGIN = 0.5;
+const JAN_1 = DateTime.fromISO('2020-01-01');
 
 export default class DynamicScaleGenerator
 {
@@ -22,7 +24,7 @@ export default class DynamicScaleGenerator
 		return {
 			horizontal: {
 				min: 90, // min - MARGIN,
-				max: 130 // max + MARGIN
+				max: Math.floor(Math.abs(JAN_1.diffNow().as('days'))) + 5 // max + MARGIN
 			},
 			vertical: {
 				min: 2.1, // min - MARGIN,

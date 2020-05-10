@@ -456,7 +456,7 @@
 		"days": 30,
 		"frames": 30,
 		"extraFrames": 300,
-		"horizontalAxisLabel": "total confirmed cases (log)",
-		"verticalAxisLabel": "new confirmed cases (log, last week)"
+		"horizontalAxisLabel": "date",
+		"verticalAxisLabel": "current ICU patients (log)"
 	}
 }

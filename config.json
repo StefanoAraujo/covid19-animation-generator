@@ -34,6 +34,11 @@
 			"timebar": {
 				"background": "#202020",
 				"foreground": "#FFB000"
+			},
+			"sourceCredits": {
+				"font": "30px DejaVu Sans Mono",
+				"background": "black",
+				"color": "white"
 			}
 		}
 	},
@@ -45,8 +50,8 @@
 			"plotArea": {
 				"left": 140,
 				"right": 1140,
-				"top": 110,
-				"bottom": 1110
+				"top": 120,
+				"bottom": 1050
 			},
 			"circleSize": 7,
 			"datePosition": { "x": 900, "y": 150 },
@@ -80,11 +85,19 @@
 				"right": 1250,
 				"top": 1245,
 				"bottom": 1250
+			},
+			"sourceCredits":
+			{
+				"left": 0,
+				"right": 1250,
+				"top": 1200,
+				"bottom": 1245
 			}
 		}
 	},
 	"dataSources": {
 		"global": {
+			"credits": "CSSE at Johns Hopkins University",
 			"url": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv",
 			"nameColumn": "Country/Region",
 			"series":
@@ -152,6 +165,7 @@
 			]
 		},
 		"southamerica": {
+			"credits": "CSSE at Johns Hopkins University",
 			"url": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv",
 			"nameColumn": "Country/Region",
 			"series":
@@ -209,6 +223,7 @@
 			]
 		},
 		"us": {
+			"credits": "CSSE at Johns Hopkins University",
 			"url": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv",
 			"nameColumn": "Province_State",
 			"series": [
@@ -241,6 +256,7 @@
 		},
 		"washington":
 		{
+			"credits": "CSSE at Johns Hopkins University",
 			"url": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv",
 			"nameColumn": "Combined_Key",
 			"series":
@@ -308,6 +324,7 @@
 			]
 		},
 		"chile": {
+			"credits": "Jorge Pérez - github.com/jorgeperezrojas/covid19-data",
 			"url": "https://raw.githubusercontent.com/jorgeperezrojas/covid19-data/master/csv/confirmados.csv",
 			"nameColumn": "region",
 			"series":
@@ -390,6 +407,7 @@
 			]
 		},
 		"chile-comunas": {
+			"credits": "Jorge Pérez - github.com/jorgeperezrojas/covid19-data",
 			"url": "https://raw.githubusercontent.com/jorgeperezrojas/covid19-data/master/csv/confirmados_comunas_interpolado.csv",
 			"nameColumn": "comuna",
 			"series":

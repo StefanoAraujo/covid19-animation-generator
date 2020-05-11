@@ -17,6 +17,7 @@ export default class ImageGenerator
 {
 	// Fields
 
+	private credits: string;
 	private color: ColorSchema;
 	private layout: Layout;
 	private series: PlotSeries[];
@@ -28,11 +29,13 @@ export default class ImageGenerator
 
 	// Constructor
 
-	public constructor (series: TimeSeries[], configuration: SeriesConfiguration[],
+	public constructor (series: TimeSeries[], credits: string,
+		configuration: SeriesConfiguration[],
 		color: ColorSchema, layout: Layout,
 		horizontalAxisLabel: string, verticalAxisLabel: string,
 		zoomEasing: EasingFunction, timebarEasing: EasingFunction)
 	{
+		this.credits = credits;
 		this.color = color;
 		this.layout = layout;
 		this.horizontalAxisLabel = horizontalAxisLabel;
@@ -92,6 +95,7 @@ export default class ImageGenerator
 		// Draw other items
 		this.drawScale(writer, frame);
 		this.drawDate(writer, frame.date);
+		this.drawCredits(writer);
 		this.drawTimebar(writer, frame);
 		await this.drawWatermark(writer);
 
@@ -221,6 +225,18 @@ export default class ImageGenerator
 			this.color.date.font,
 			this.color.date.color,
 			this.layout.datePosition);
+	}
+
+	private drawCredits(writer: CanvasWriter)
+	{
+		writer.drawFilledRectangle(
+			this.layout.sourceCredits,
+			this.color.sourceCredits.background);
+		writer.drawBoxedText(
+			`Source: ${this.credits}`,
+			this.color.sourceCredits.font,
+			this.color.sourceCredits.color,
+			this.layout.sourceCredits);
 	}
 
 	private drawTimebar(writer: CanvasWriter, frame: FrameInfo)

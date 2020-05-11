@@ -42,6 +42,7 @@ const main = async () =>
 		throw new Error(`Layout not found: ${LAYOUT_NAME}`);
 	const generator = new ImageGenerator(
 		timeSeries,
+		dataSource.credits,
 		dataSource.series,
 		colorSchema,
 		layout,

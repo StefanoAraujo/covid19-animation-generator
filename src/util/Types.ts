@@ -50,6 +50,11 @@ export interface ColorSchema {
 	timebar: {
 		background: string;
 		foreground: string;
+	},
+	sourceCredits: {
+		font: string;
+		background: string;
+		color: string;
 	}
 }
 
@@ -77,9 +82,11 @@ export interface Layout {
 		}
 	},
 	timebar: Box;
+	sourceCredits: Box;
 }
 
 export interface DataSource {
+	credits: string;
 	url: string;
 	nameColumn: string;
 	preProcessor: string;
